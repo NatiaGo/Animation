@@ -1,0 +1,47 @@
+.island {
+    position: relative;
+ }
+ 
+.island-image {
+    width: 1530px;
+    height: 750px;
+}
+
+.sun {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 20px;
+    left: 465px; 
+    animation: sunmove 20s infinite linear;
+         
+}
+@keyframes sunmove {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.ship {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    animation: shipmove 25s infinite ease-in-out alternate-reverse ;
+
+}
+
+@keyframes shipmove {
+    from {left: 350px; top:400px}
+    to {left: 600px; top:400px}
+}
+
+.airplane {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    animation: airplanemove 15s infinite;
+}
+@keyframes airplanemove {
+    0% {top: 200px; right: 300px} 
+    50% {top: 550px; right: 700px}
+    100%{top:550px; right: 1100px; transform: rotate(30deg);}
+}
